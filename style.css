@@ -1,3 +1,12 @@
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
 .bgTrans {
   background:hsl(0 0% 100% / 0.1);
   backdrop-filter:blur(1rem);
@@ -51,13 +60,21 @@
   color:#ffffff;
 }
 
+.bgBlue {
+  background-color:#0099ff;
+}
+
+.img {
+  width:100%;
+}
+
+.rem2 {
+  margin-top:4rem;
+}
+
 #Project {
   background-color: #0099ff;
   padding: 25px;
-}
-
-.bgBlue {
-  background-color:#0099ff;
 }
 
 /* .scrollable {
@@ -77,6 +94,10 @@
 
 section {
   padding-top: 4rem;
+}
+
+.section2 {
+  padding-top:6.3rem;
 }
 
 h2 {
@@ -99,13 +120,4 @@ body {
 
 .body {
   background-color: #b3ffb3;
-}
-
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1,
-  .bgimg-2,
-  .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
 }

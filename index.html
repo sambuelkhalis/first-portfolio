@@ -5,13 +5,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap & W3 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css" />
+    <!-- Profile Icon -->
     <link rel="icon" href="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-5--v2.GIF" />
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS From Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- CSS From W3 -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- CSS Animation From AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Logo -->
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css" />
+    <!-- Contact Link To Google Sheets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <!-- Shake Animation With CSS -->
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
 
   </head>
   <body>
@@ -38,10 +47,8 @@
                 <img src="https://i.postimg.cc/0yVqJKV7/Screenshot-2022-02-24-225528-modified.png" alt="Logo" width="55" height="55">
                 <i class="b" style="font-size:28px; font-family:trebuchet ms; padding:11px; color:#8d353c">Sambu El Khalis</i>
                 <nav class="navbar navbar-expand-lg navbar-light bg-info">
-                    <div class="container-fluid;collapse navbar-collapse">
-                      <a class="navbar-brand a ms-2" href="#About">ABOUT</a>
-                      <a class="navbar-brand a ms-2" href="#Portfolio">PORTFOLIO</a>
-                      <a class="navbar-brand a ms-2" href="#Contact">CONTACT</a>
+                    <div class="container-fluid;collapse navbar-collapse text-center">
+                      <a class="navbar-brand a ms-2 shake-slow" href="#About">ABOUT</a><a class="navbar-brand a ms-2 shake-slow" href="#Portfolio">PORTFOLIO</a><a class="navbar-brand a ms-2 shake-hard" href="#Contact">CONTACT</a>
                       <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -59,9 +66,9 @@
 
     <!-- Jumbotron -->
     <section id="Jumbotron" class="jumbotron text-center">
-      <img class="rounded-circle img-thumbnail m-2" src="https://i.postimg.cc/KYym2r7g/IMG-20210919-WA0055.jpg" alt="My Photo" width="150" height="150">
-      <h1 class="display-4 m-3" style="font-family:plantin ">Sambu El Khalis</h1>
-      <p class="lead" style="font-family:american typewriter">Programming | Photography | Content Education</p>
+      <img data-aos="zoom-in" data-aos-delay="2000" class="rounded-circle img-thumbnail m-2 rem2" src="https://i.postimg.cc/KYym2r7g/IMG-20210919-WA0055.jpg" alt="My Photo" width="150" height="150">
+      <h1 class="display-4 m-3" style="font-family:plantin">Sambu El Khalis</h1>
+      <p class="lead" style="font-family:american typewriter"> <br></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#b3ffb3" fill-opacity="1" d="M0,32L360,64L720,192L1080,96L1440,96L1440,320L1080,320L720,320L360,320L0,320Z"></path></svg>
 
     </section>
@@ -70,16 +77,19 @@
     <!-- About Me -->
     <section id="About" class="body">
     <div class="w3-content w3-container w3-padding-64">
-      <hr><h1 class="w3-center bg-primary p-3 bg-opacity-75"><big>ABOUT ME</big></h1><hr>
+      <hr><h1 class="w3-center bg-dark text-light p-3" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="230"><big>ABOUT ME</big></h1><hr>
       <div class="w3-row">
         <div class="w3-col m6 w3-center w3-padding-large">
-          <h3 style="font-size:27px"><b><i class="fa fa-address-card fa-lg w3-margin-right mt-4"></i>My Profile</b></h3><br>
-          <img src="https://i.ibb.co/YtFfr8C/HTML9.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+          <h3 data-aos="fade-right" data-aos-delay="400" data-aos-duration="1400" style="font-size:27px"><b>
+            <i class="fa fa-address-card fa-lg w3-margin-right mt-4"></i><span></span>My Profile</b></h3><br>
+          <img data-aos="zoom-in" data-aos-duration="1600" data-aos-offset="230" src="https://i.ibb.co/YtFfr8C/HTML9.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
         </div>
         <!-- Hide this text on small devices -->
         <div>
-          <br><br><br><br><br><p class="text-center">Welcome to my website. First please let me introduce myself, my name Sambu El Khalis. I was born on November 26, 2005 in Jakarta, and I am now 16 years old, the first child in my family. I live in the city of Jakarta and attend SMK Pusaka 1 Jakarta 1st grade high school. My hobby is playing games and also I really like watching movies. <br><br>
-            When I grow up, I want to work as a freelancer with the skills I already have. and the reason why I chose to become a freelancer is because being a freelancer we have an office in our own room without the need to go to work, and also of course we don't need to meet clients to determine what projects will be made later. Not only is being a freelancer the job I want when I grow up, I also want to be a game developer. by becoming a game developer I can make games with the idea in my head, of course I want to make someone feel very different from other games if they play games made by myself.</p>
+          <br><br><p data-aos="fade-down" data-aos-delay="800" data-aos-duration="1800" data-aos-offset="350" class="text-center pt-5 mt-5">
+            Welcome to my website. First please let me introduce myself, my name Sambu El Khalis. I was born on November 26, 2005 in Jakarta, and I am now 16 years old, the first child in my family. I live in the city of Jakarta and attend SMK Pusaka 1 Jakarta 1st grade high school. My hobby is playing games and also I really like watching movies.</p><br>
+          <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1800" data-aos-offset="240" class="text-center">
+            When I grow up, I want to work as a freelancer with the skills I already have. and the reason why I chose to become a freelancer is because being a freelancer we have an office in our own room without the need to go to work, and also of course we don't need to meet clients to determine what projects will be made later. Not only is being a freelancer the job I want when I grow up, I also want to be a game developer. by becoming a game developer I can make games with the idea in my head, of course I want to make someone feel very different from other games if they play games made by myself.</>
           </div>
         </div>
       </section>
@@ -87,7 +97,7 @@
     
     <!-- Portfolio -->
     <section id="Portfolio" class="body">
-      <div class="container pt-5">
+      <div class="container pt-5" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="250">
         <div class="row">
           <div class="col">
             <hr><h1 class="w3-center bg-dark p-3 text-light"><big>PORTFOLIO</big></h1><hr>
@@ -97,26 +107,29 @@
       
       <div class="container text-center p-5">
         <div class="row">
-          <div class="col me-3 border border-warning border-3 pt-3 bg-danger text-light">
-            <h3 class="mb-3 minWidth">Programming</h3>
+          <div class="col me-3 border border-warning border-3 pt-3 bg-danger text-light" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500" data-aos-offset="230">
+            <h3 class="mb-3">Programming</h3>
             <p>In this digital world we can do anything using the technology that has been created. That's the reason why I like Programming so much, because I can create new technology with my own ideas. By creating new technology, of course, I can help human activities more easily and also more profitable of course. And hopefully in the next few years I will become a professional game developer in making games with the ideas.</p>
           </div>
-          <div class="col ms-3 border border-danger border-3 pt-3 bg-warning text-dark mt-5">
+          <div class="col ms-3 border border-danger border-3 pt-3 bg-warning text-dark" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1500" data-aos-offset="230">
             <h3 class="mb-3">Photopraphy</h3>
             <p>But it's not only programming that I like, but I also like Photography. Because with photography I can not only see but I can also feel what is so beautiful just shooting in or out there freely. And without realizing it, I understood something I had never felt and learned just by taking pictures and then looking back at the results. We can't force someone to like our work, but what we can do is love the photos we have taken.</p>
           </div>
         </div>
         
         <hr><h3 class="text-center mb-2 font1">Im really good at :</h><br><br>
-        <p style="font-size:23px" class="w3-wide text-start"><i class="fa fa-code"></i> Programming</p>
+        <p data-aos="fade-right" data-aos-delay="1000" style="font-size:23px" class="w3-wide text-start">
+          <i class="fa fa-code"></i>Programming</p>
         <div class="w3-light-grey mb-4">
           <div class="w3-container w3-center bg-dark p-2 text-light" style="width:100%;font-size:20px">100%</div>
         </div>
-        <p style="font-size:23px" class="w3-wide text-start"><i class="fa fa-camera"></i> Photography</p>
+        <p data-aos="fade-right" data-aos-delay="1500" style="font-size:23px" class="w3-wide text-start">
+          <i class="fa fa-camera"></i>Photography</p>
         <div class="w3-light-grey mb-4">
           <div class="w3-container w3-center bg-danger text-light p-2" style="width:85%; font-size:20px">85%</div>
         </div>
-        <p style="font-size:23px" class="w3-wide text-start"><i class="fa fa-bed"></i> Lying Around</p>
+        <p data-aos="fade-right" data-aos-delay="2000" style="font-size:23px" class="w3-wide text-start">
+          <i class="fa fa-bed"></i>Lying Around</p>
         <div class="w3-light-grey">
           <div class="w3-container w3-center mb-3 bg-info p-2" style="width:100%; font-size:20px">101%</div>
         </div><hr>
@@ -127,24 +140,24 @@
     <!-- Skill Part -->
     <svg class="body" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L48,90.7C96,85,192,75,288,90.7C384,107,480,149,576,181.3C672,213,768,235,864,218.7C960,203,1056,149,1152,149.3C1248,149,1344,203,1392,229.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
+    <!-- Card Programming 1 & 2-->
     <section id="Project">
     <div class="row row-cols-1 row-cols-md-2 g-4" style="font-size:4vw">
       <div>
-        <em><h1 class="text-center mb-5"><i class="fa fa-code"></i> Programming Skill</h1></em>
-
-        <!-- Card Programming 1 & 2-->
+        <em><h1 class="text-center mb-5"><i class="fa fa-code" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1100" data-aos-offset="230">
+        </i> Programming Skill</h1></em>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-6" data-aos="flip-left" data-aos-delay="1100" data-aos-duration="1500" data-aos-offset="220">
             <div class="card text-white bg-dark border-light border-3" style="max-width: 18rem;">
               <div class="card-body">
-              <div><h3 class="ps-3 font1">HTML, CSS, JavaScript</h3></div>
+              <div><h3 class="ps-3 font1">HTML, CSS, JavaScript <i class="fa fa-file-code-o"></i></h3></div>
                   <h3 class="card-title">Scripting Language</h3>
                   <p class="card-text mt-2 font2">With a script language I can create a website with a beautiful and attractive appearance as I like.</p>
                 </div>
             </div>
           </div>
 
-            <div class="col-sm-6 mt-5">
+            <div class="col-sm-6 mt-5" data-aos="flip-right" data-aos-delay="1100" data-aos-duration="1500" data-aos-offset="240">
               <div class="card text-white bg-dark border-light border-3" style="max-width: 18rem;">
                 <div><h3 class="ps-3 font1">C#, C++, Java</h3></div>
                 <div class="card-body">
@@ -158,9 +171,9 @@
 
         <!-- Card Programming 3 & 4 -->
         <div class="row mt-5">
-          <div class="col-sm-6">
+          <div class="col-sm-6" data-aos="flip-right" data-aos-delay="1100" data-aos-duration="1500" data-aos-offset="220">
             <div class="card text-white bg-dark border-light border-3" style="max-width: 18rem;">
-              <div><h3 class="ps-3 font1"><i class="fa fa-desktop"></i> Create a Program</h3></div>
+              <div><h3 class="ps-3 font1">Create a Program <i class="fa fa-desktop"></i></h3></div>
                 <div class="card-body">
                   <h3 class="card-title">Simple Program</h3>
                   <p class="card-text mt-2 font2">I can make a simple Program, such as making a food menu Program for the cashier, and also making a simple Program to buy plane tickets.</p>
@@ -168,7 +181,7 @@
             </div>
           </div>
 
-          <div class="col-sm-6 mt-5">
+          <div class="col-sm-6 mt-5" data-aos="flip-left" data-aos-delay="1100" data-aos-duration="1500" data-aos-offset="240">
             <div class="card text-white bg-dark border-light border-3" style="max-width: 18rem;">
               <div><h3 class="ps-3 font1">Unity <i class="fa fa-gamepad"></i></h3></div>
               <div class="card-body">
@@ -183,19 +196,21 @@
       </div>
       <div class="col">
         <div class="card bg-warning border-danger border-4">
-          <img src="https://i.ibb.co/SVKgtG1/HTML2.jpg" class="card-img-top" alt="Coding Image" style="width:auto">
+          <img src="https://i.ibb.co/SVKgtG1/HTML2.jpg" class="card-img-top img" alt="Coding Image" style="width:auto">
           <div class="card-body">
-            <h2 class="card-title ms-4">Programming</h2>
-            <p class="card-text font2 bg-info p-3">With Programming you can do and make something Program as you like by Coding. Such as making a Website, Application, and also Games. you can make it with the appropriate Programming Language. Like, if you want to make a Website you have to make it with the HTML Programming language.</p>
+            <h2 class="card-title ms-4" style="font-size:35px" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1500" data-aos-offset="320">
+              Programming</h2>
+            <p class="card-text font2 bg-info p-3">With Programming you can do and make something Program as you like by Coding. Such as making a Website, Application, and Games. you can make it with the appropriate Programming Language. Like, if you want to make a Website you have to make it with the HTML Programming language.</p>
           </div>
         </div>
       </div>
 
       <div class="col">
         <div class="card bg-warning border-danger border-4">
-          <img src="https://i.postimg.cc/qBcdsQmR/HTML21.jpg" class="card-img-top" alt="Photography Image" style="width:auto">
+          <img src="https://i.postimg.cc/qBcdsQmR/HTML21.jpg" class="card-img-top img" alt="Photography Image" style="width:auto">
           <div class="card-body">
-            <h2 class="card-title ps-4">Photography</h2>
+            <h2 class="card-title ms-4" style="font-size:35px" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1500" data-aos-offset="320">
+              Photography</h2>
             <p class="card-text font2 bg-info p-3">In photography of course we can save the moment from taking a picture that we take from the camera. Photography is not about us having to be able take the best Pictures and the value is also high, but in Photography it will have a high value when we take a Pictures with Images that have the right composition or angel,
               have a story, have an emotion, and can also build one's mood. So, don't think about how good you are at taking Pictures, but think about how you can use the elements in Photography.</p>
           </div>
@@ -205,11 +220,12 @@
 
       <!-- Card Photography 1 & 2 -->
       <div>
-        <em><h1 class="text-center mb-5"><i class="fa fa-camera"></i> Photography Skill</h1></em>
+        <em><h1 class="text-center mb-5"><i class="fa fa-camera" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1100" data-aos-offset="230">
+        </i> Photography Skill</h1></em>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-6" data-aos="fade-left" data-aos-delay="1100" data-aos-duration="1500" data-aos-offset="240">
             <div class="card text-white bg-dark border-light border-3" style="max-width:18rem">
-              <div><h3 class="ps-3 font1">Exposure</h3></div>
+              <div><h3 class="ps-3 font1">Exposure <i class="fa fa-sun-o"></i></h3></div>
               <div class="card-body">
                 <h3 class="card-title">ISO, Aperture, Shutter</h3>
                 <p class="card-text mt-2 font2">In exposure there are 3 components, namely ISO, Aperture, and Shutter Speed. That's what will affect the light or dark of our Photos. So the Component in Exposure is very important in Photography</p>
@@ -217,9 +233,9 @@
             </div>
           </div>
 
-        <div class="col-sm-6">
+        <div class="col-sm-6" data-aos="fade-right" data-aos-delay="1100" data-aos-duration="1500" data-aos-offset="240">
           <div class="card text-white bg-dark border-light border-3" style="max-width:18rem">
-            <div><h3 class="ps-3 font1">Composition</h3></div>
+            <div><h3 class="ps-3 font1">Composition <i class="fa fa-area-chart"></i></h3></div>
             <div class="card-body">
               <h3 class="card-title">Elements in Photography</h3>
               <p class="card-text mt-2 font2">Composition is very useful to show the results of Photos are not only good, but also can give a mood to the Photo. By combining elements when taking Photos.</p>
@@ -231,9 +247,9 @@
         
         <!-- Card Photography 3 & 4 -->
         <div class="row">
-          <div class="col-sm-6 mt-5">
+          <div class="col-sm-6 mt-5" data-aos="fade-left" data-aos-delay="1100" data-aos-duration="1500" data-aos-offset="240">
             <div class="card text-white bg-dark border-light border-3" style="max-width:18rem">
-              <div><h3 class="ps-3 font1">Potrait Photography</h3></div>
+              <div><h3 class="ps-3 font1">Potrait Photography <i class="fa fa-file-image-o"></i></h3></div>
               <div class="card-body">
                 <h3 class="card-title">Photography Genre</h3>
                 <p class="card-text mt-2 font2">My Genre of Photography is Portrait. Because I really like taking Pictures with human objects, such as Photo models. Because by taking Portraits I can make my Pictures with the results I want. So I prefer to tell my own results to tell the Model, whether she likes it or not.</p>
@@ -241,9 +257,9 @@
             </div>
           </div>
 
-        <div class="col-sm-6 mt-5 pb-5">
+        <div class="col-sm-6 mt-5 pb-5" data-aos="fade-right" data-aos-delay="1100" data-aos-duration="1500" data-aos-offset="240">
           <div class="card text-white bg-dark border-light border-3" style="max-width:18rem">
-            <div><h3 class="ps-3 font1">Videography</h3></div>
+            <div><h3 class="ps-3 font1">Videography <i class="fa fa-file-video-o"></i></h3></div>
             <div class="card-body">
               <h3 class="card-title">Cinematic Video</h3>
               <p class="card-text mt-2 font2">Apart from being a Photographer, I also like being a Videographer. I really like making a Cinematic Video in a City and Forest with a Natural Cinematic Video Theme, because by making a Cinematic video I can feel something natural and calm from Watching the Video.</p>
@@ -258,7 +274,7 @@
       <!-- Skill Part -->
 
       <!-- Project -->
-      <div class="w3-row w3-center w3-dark-gray w3-padding-16 mb-3" id="portfolio">
+      <div class="w3-row w3-center w3-dark-gray w3-padding-16 mb-3" id="portfolio" data-aos="fade-up" data-aos-duration="1300" data-aos-offset="210">
         <h1 class="text-center pd-3">Projects</h1>
         <div class="w3-quarter w3-section">
           <span class="w3-xlarge"><i class="fa fa-users"></i> 4 <</span><br>
@@ -284,31 +300,47 @@
       <!-- Contact Me-->
       <svg class="mt-5 body" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,160C384,139,480,85,576,96C672,107,768,181,864,202.7C960,224,1056,192,1152,202.7C1248,213,1344,267,1392,293.3L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
       
-      <section id="Contact" class="body">
+      <section id="Contact" class="body section2">
         <div class="container">
           <div class="row">
             <div class="col">
-              <h2 class="text-center font3">Contact Me <i class="fa fa-phone"></i></h2>
+              <h2 class="text-center shake-hard shake-freeze" data-aos-wow-iteration="infinite" data-aos-wow-duration="1500ms">Contact Me <span class="fa fa-phone"></span></h2>
             </div>
           </div>
           <div class="row justify-content-center">
             <div class="col-8">
-              <form>
+
+              <form name="submit-to-google-sheet">
                 <div>
                   <label for="name" class="form-label">Name</label>
-                  <input type="name" class="form-control" id="name">
+                  <input type="name" class="form-control" id="name" name="Name" placeholder="Name" required>
                 </div>
                 <div class="form-check">
                 </div>
+
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email" placeholder="Email">
                 </div>
+
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" rows="2"></textarea>
+                  <textarea class="form-control" id="message" rows="2" name="Message" placeholder="Message" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary mb-5">Send</button>
+
+                <div class="alert alert-success alert-dismissible fade d-none show my-alert" role="alert">
+                  <strong>Thanks!</strong> Your message has been send.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="mb-4"><button type="submit" class="btn btn-primary btn-sendd">Send</button></div>
+                <button class="btn btn-primary d-none btn-loadingg" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm pd-4" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+                  
+                <!-- <div id="liveAlertPlaceholder"></div>
+                <button type="submit" class="btn btn-primary mb-4 btn-send d-none" id="liveAlertBtn"><i class="fa fa-spinner fa-pulse fa-3x fa-fw btn-loading d-none"></i>
+                <span class="sr-only">Loading...</span>Send</button> -->
               </form>
             </div>
           </div>
@@ -318,36 +350,61 @@
 
       <!-- Footer -->
       <footer class="text-center w3-dark-gray p-5">
-        <a href="https://wa.me/+6281908296596" target="_blank"><i class="fa fa-whatsapp fa-3x c mb-2 me-2"></i></a>
-        <a href="https://www.youtube.com/channel/UCITrghrdOcc2d4NZ4tsZWyA" target="_blank"><i class="fa fa-youtube-play fa-3x c me-2"></i></a>
-        <a href="https://www.instagram.com/sambu_el_khalis" target="_blank"><i class="fa fa-instagram fa-3x c me-2"></i></a>
-        <a href="https://github.com/SambuJasteeen/SambuJasteeen" target="_blank"><i class="fa fa-github fa-3x c"></i></a>
-        <h3>Powered By <a href="https://wa.me/+6281908296596" target="_blank" class="c d"><i class="fa fa-user-circle-o"></i> Sambu El Khalis</a></h3>
+        <a data-aos="zoom-out" data-aos-duration="1500" href="https://wa.me/+6281908296596" target="_blank"><i class="fa fa-whatsapp fa-3x c mb-2 me-2"></i></a>
+        <a data-aos="zoom-out" data-aos-duration="2000" href="https://www.youtube.com/channel/UCITrghrdOcc2d4NZ4tsZWyA" target="_blank"><i class="fa fa-youtube-play fa-3x c me-2"></i></a>
+        <a data-aos="zoom-out" data-aos-duration="2500" href="https://www.instagram.com/sambu_el_khalis" target="_blank"><i class="fa fa-instagram fa-3x c me-2"></i></a>
+        <a data-aos="zoom-out" data-aos-duration="2500" href="https://github.com/sambuelkhalis" target="_blank"><i class="fa fa-github fa-3x c"></i></a>
+        <h3 class="shake-horizontal">Powered By <a href="https://wa.me/+6281908296596" target="_blank" class="c d"><i class="fa fa-user-circle-o"></i> Sambu El Khalis</a></h3>
       </footer>
       <!-- / Footer -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+    <!-- / Option 1: Bootstrap Bundle with Popper -->
+
+     <!-- Animation AOS Javascript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once:true
+      });
+    </script>
+    <!-- / Animation AOS Javascript -->
+
+    <!-- GSAP Platform For Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(TextPlugin)
+
+      gsap.from('.navbar', {duration:2, y:'-100%', opacity: 0, ease:'bounce'})
+      gsap.from('.display-4', {duration:3, delay:0.6, x:-50, opacity:0, ease:'elastic'})
+      gsap.to('.lead', {duration:5.5, delay:2.1, text:'Programming | Photography | Content Education'})
+    </script>
+    <!-- / GSAP Platform For Animation -->
+
     <script>
       // Modal Image Gallery
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-      }
+      // function onClick(element) {
+      //   document.getElementById("img01").src = element.src;
+      //   document.getElementById("modal01").style.display = "block";
+      //   var captionText = document.getElementById("caption");
+      //   captionText.innerHTML = element.alt;
+      // }
+      // Modal Image Gallery
       
       // Change style of navbar on scroll
-      window.onscroll = function() {myFunction()};
-      function myFunction() {
-          var navbar = document.getElementById("myNavbar");
-          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-              navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
-          } else {
-              navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
-          }
-      }
+      // window.onscroll = function() {myFunction()};
+      // function myFunction() {
+      //     var navbar = document.getElementById("myNavbar");
+      //     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      //         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+      //     } else {
+      //         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+      //     }
+      // }
+      // Change style of navbar on scroll
       
       // Used to toggle the menu on small screens when clicking on the menu button
       // function toggleFunction() {
@@ -358,7 +415,57 @@
       //         x.className = x.className.replace(" w3-show", "");
       //     }
       // }
+
+      // Show Button Submit Done
+      const btnSendd = document.querySelector('.btn-sendd');
+      const btnLoadingg = document.querySelector('.btn-loadingg');
+      const myAlert = document.querySelector('.my-alert');
+      // Show Button Submit Done
+
+      // Submit Fungion To Google Sheets
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzuR2I9CIP7e49H1AMkA2DZZK9SLHAXUsxsZHyznGlhoUyW9Rsg2pNX5rXYo57rr1m2/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        // Memanggil Button Setelah Submit ( Fungsional nya seperti saklar lampu)
+        // Menyalakan Tombol Loading, Mematikan Tombol Kirim
+        btnLoadingg.classList.toggle('d-none');
+        btnSendd.classList.toggle('d-none');
+        // Memanggil Button Setelah Submit
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            // Menyalakan Tombol Kirim, Mematikan Tombol Loading
+            btnLoadingg.classList.toggle('d-none')
+            btnSendd.classList.toggle('d-none')
+            // Menampilkan Alert
+            myAlert.classList.toggle('d-none')
+            // Restart Form
+            form.reset();
+            console.log('Success!', response) })
+          .catch(error => console.error('Error!', error.message))
+      })
+      // Submit Fungsion To Google Sheets
+      
+      // Alert Button Submit
+      var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+      var alertTrigger = document.getElementById('liveAlertBtn')
+
+      function alert(message, type) {
+        var wrapper = document.createElement('div')
+        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+        alertPlaceholder.append(wrapper)
+      }
+
+      if (alertTrigger) {
+        alertTrigger.addEventListener('click', function () {
+          alert('Your message has been send, thank you for the message!', 'success')
+        })
+      }
+      // Alert Button Submit
       </script>
   </body>
 </html>
-
