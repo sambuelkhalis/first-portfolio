@@ -69,11 +69,19 @@
 }
 
 .rem2 {
-  margin-top:4rem;
+  margin-top:3.5rem;
 }
 
 .rem3 {
   margin-top:5rem;
+}
+
+.indent {
+  text-indent:35px;
+}
+
+.indent2 {
+  text-indent:40px;
 }
 
 #Project {
@@ -125,4 +133,8 @@ body {
 
 .body {
   background-color: #b3ffb3;
+}
+
+.clear {
+  clear:both;
 }
